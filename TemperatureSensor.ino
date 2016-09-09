@@ -135,7 +135,7 @@ void sendValue(String temp)
   lcd.setCursor(0, 1);
   lcd.print("des donnees...");
 
-  String host = "51.255.50.96";
+  String host = "***.***.***.***";
 
   Serial.println("Connected");
 
@@ -149,7 +149,7 @@ void sendValue(String temp)
 
   delay(1000);
 
-  String h_request = "GET /ArduinoWebservices/trace.php?t=" + temp + " HTTP/1.1\r\nHost: 51.255.50.96\r\n\r\n";
+  String h_request = "GET /trace.php?t=" + temp + " HTTP/1.1\r\nHost: ***.***.***.***\r\n\r\n";
   int request_length = h_request.length();
 
 
